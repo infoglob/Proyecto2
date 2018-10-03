@@ -4,11 +4,11 @@ package modelo;
 public class Permisos {
     private int id_permiso;
     private int id_usuario;
+    private boolean crear;
     private boolean listar;
     private boolean eliminar;
     private boolean editar;
-    private boolean crear;
-    private String nombreModulo;
+    //private String nombreModulo;
 
     
     public int getId_permiso() {
@@ -59,13 +59,13 @@ public class Permisos {
         this.crear = crear;
     }
 
-    public String getNombreModulo() {
+    /*public String getNombreModulo() {
         return nombreModulo;
     }
 
     public void setNombreModulo(String nombreModulo) {
         this.nombreModulo = nombreModulo;
-    }
+    }*/
     
     
     

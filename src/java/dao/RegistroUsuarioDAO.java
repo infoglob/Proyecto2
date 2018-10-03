@@ -10,6 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import modelo.Roles;
+import modelo.Usuario;
 
 /**
  *
@@ -54,7 +55,7 @@ public class RegistroUsuarioDAO {
     
     
     //---------------------METODO PARA REGISTRAR USUARIOS--------------------------
-    public boolean registrarUsuario(Roles rol, String nombre, String apellido, String usuario, String password){
+    public boolean registrarUsuario(Roles rol, Usuario usuario){
         PreparedStatement ps = null; //No se necesita un "ResultSet" porque no se va hacer
                                      //una consulta, mas bien se hara una inserción
         
@@ -63,10 +64,15 @@ public class RegistroUsuarioDAO {
             ps = getConnection().prepareStatement(consulta);
             
             ps.setInt(1, rol.getId_rol());
+            ps.setString(2, usuario.getNombre());
+            ps.setString(3, usuario.getApellido() );
+            ps.setString(4, usuario.getUsuario());
+            ps.setString(5, usuario.getPass());
+            /*
             ps.setString(2, nombre);
             ps.setString(3, apellido);
             ps.setString(4, usuario);
-            ps.setString(5, password);
+            ps.setString(5, password);*/
             
             if(ps.executeUpdate() == 1) 
                 return true;

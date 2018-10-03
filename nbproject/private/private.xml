@@ -3,23 +3,18 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/modelo/Usuario.java</file>
             <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/controlador/InicioSesion.java</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/listarCliente.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/repetitivos/header.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/conexion/ConexionBD.java</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/RolesDAO.java</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/UsuarioDAO.java</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/RegistroUsuarioDAO.java</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/ClienteDAO.java</file>
             <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/modelo/Cliente.java</file>
             <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/controlador/ClienteControlador.java</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/sistema.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/index.jsp</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/modelo/Permisos.java</file>
             <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/registroCliente.jsp</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/controlador/RegistroUsuarioControlador.java</file>
             <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/registroUsuario.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/logout.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/UsuarioDAO.java</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/css/coloresCuadrosPaginaInicio.css</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/login.jsp</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/ClienteDAO.java</file>
-            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/web/css/custom.css</file>
+            <file>file:/D:/Users/Diego/Documents/NetBeansProjects/Proyecto/src/java/dao/PermisosDAO.java</file>
         </group>
     </open-files>
 </project-private>

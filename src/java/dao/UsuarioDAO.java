@@ -9,6 +9,7 @@ import java.sql.Connection;
 import conexion.ConexionBD;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import modelo.Usuario;
 
 /**
@@ -41,6 +42,27 @@ public class UsuarioDAO {
             System.out.println("Error en buscarNombreApellido de la Clase UsuarioDAO: "+e.getMessage());
         }
         
+        return usu;
+    }
+    
+    
+    public Usuario buscarIdUsuario(String nombreUsuario){
+        Usuario usu = new Usuario();
+        try{
+            PreparedStatement ps = connection.prepareStatement("SELECT* FROM usuarios WHERE usuario = ?");
+            ps.setString(1, nombreUsuario);
+            ResultSet rs = ps.executeQuery();
+            
+            if(rs.next()){
+                usu.setId_usuario(rs.getInt("id_usuario"));
+               
+                //Solo vamos a retornar el id del nombre de usuario recibido como argumento
+            }
+            
+        } catch(SQLException e){
+            System.out.println("Error en buscarIdUsuario de la Clase PermisosDAO: "+e);
+        }
+        //System.out.println("El ID del usuario AHORA es: "+usu);
         return usu;
     }
     
